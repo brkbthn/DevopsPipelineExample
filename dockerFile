@@ -13,4 +13,4 @@ CMD apt-get update-y
 EXPOSE 8080
 
 # Uygulamamızın çalışmasını sağlıyoruz.
-ENTRYPOINT ["java",  "-jar", "/devops-application.jar"]
+ENTRYPOINT ["java",  "-jar", "/JavaSpringBootPorject-1.0.0-SNAPSHOT.jar"]
