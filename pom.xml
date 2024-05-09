@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>JavaSpringBootPorject</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>JavaSpringBootPorject</name>
     <description>JavaSpringBootPorject</description>
     <properties>

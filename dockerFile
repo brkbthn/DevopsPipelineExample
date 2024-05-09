@@ -1,0 +1,16 @@
+# JDK kurlumu
+FROM amazoncorretto:17
+
+# Projemizdeki JAR dosyamızın, Docker içinde çalışacağı konumu
+ARG JAR_FILE=target/*.jar
+
+# JAR dosyasını root klasörüne bu isimle kopyala
+COPY ${JAR_FILE} JavaSpringBootPorject-1.0.0-SNAPSHOT.jar
+
+CMD apt-get update-y
+
+# projenin calisacaği iç port
+EXPOSE 8080
+
+# Uygulamamızın çalışmasını sağlıyoruz.
+ENTRYPOINT ["java",  "-jar", "/devops-application.jar"]
