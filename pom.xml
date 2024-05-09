@@ -40,7 +40,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-        <finalName>Pipeline-Example</finalName>
+        <finalName>pipeline-example</finalName>
     </build>
 
 </project>
