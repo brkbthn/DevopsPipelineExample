@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pipeline-example
+spec:
+  selector:
+    matchLabels:
+      app: pipeline-example
+  template:
+    metadata:
+      labels:
+        app: pipeline-example
+    spec:
+      containers:
+        - name: pipeline-example
+          image: brkbthn/pipeline-example:latest
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 8080
+
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pipeline-example-service
+spec:
+  selector:
+    app: pipeline-example
+  ports:
+    - port: 8080
+      targetPort: 8080
+  type: NodePort
+
