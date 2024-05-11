@@ -18,7 +18,7 @@ public class DevOpsController {
         LocalDateTime myObj = LocalDateTime.now();
         System.out.println(myObj);
 
-        return "DevOps Docker Hello: " + myObj;
+        return "DevOps Docker Hello..: " + myObj;
     }
 
     //   http://localhost:8080/info
