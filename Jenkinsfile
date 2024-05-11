@@ -33,7 +33,7 @@ pipeline {
             steps {
                 sh 'kubectl get deployment pipeline-example -n default'
                 script{
-                    kubernetesDeploy (configs: 'deploymentservice.yml', kubeconfigId: 'kubernetes')
+                    kubernetesDeploy (configs: 'deploymentservice.yml', kubeconfigId: 'kube')
                 }
             }
         }
